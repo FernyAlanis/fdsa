@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+long superpower (long a, long b){
+  long superpower=1;
+  for (long i=1; i<=b; ++i)
+  superpower= superpower*a;
+  return superpower;
+}
+
+int main(){
+  long ba;
+  long po;
+  cout<<"Bienvenido a la superpower machine, ingrese la base:" << endl;
+  cin>>ba;
+  cout<<"Ingrese la potencia:"  << endl;
+  cin>>po;
+  cout<<"El resultado es:"<<superpower(ba, po)<<endl;
+  return 0;
+}
